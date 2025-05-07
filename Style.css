@@ -1,0 +1,51 @@
+
+
+.animated-bg {
+    height: 100%;
+    background: linear-gradient(-45deg, #0f0f0f, #1a1a2e, #3a3a52, #2f2f2f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .content {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+
+  }
+
+
+  .logo-levitating {
+    animation: levitate 3s ease-in-out infinite;
+  }
+  
+  @keyframes levitate {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .logo-config {
+    width: 800px;
+    height: 400px;
+  }
+
+  
